@@ -1,0 +1,113 @@
+.main__container {
+  margin: auto;
+
+  .top-banner {
+    .top-title > img {
+      max-width: 468px;
+      width: 100%;
+    }
+
+    .wallet-info {
+      text-align: right;
+
+      .address {
+        text-align: right;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .airdrop-info {
+    .total-earned {
+      font-size: 18px;
+    }
+    .locktime-progress {
+      max-width: 470px;
+      width: 100%;
+    }
+  }
+
+  .nft-infos {
+    font-size: 18px;
+    >:first-child {
+      > div {
+        max-width: 498px;
+        max-height: 560px;
+        padding-right: 10px;
+      }
+    }
+    .wallet-nfts {
+      gap: 20px;
+      justify-content: space-between;
+      width: 100%;
+      overflow-y: auto;
+      &.loading{
+        height: 200px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .staked-nfts {
+    width: 100%;
+    .alice-carousel {
+      flex-grow: 1;
+      .staked-nft-items {
+        width: 140px;
+        .nft-card {
+          width: 130px;
+        }
+      }
+    }
+    .btn-prev,
+    .btn-next {
+      cursor: pointer;
+      
+      svg {
+        fill: rgba(171, 228, 247, 0.05);
+        stroke-width: 1px;
+        stroke: #6A7394;
+      }
+    }
+    &.loading{
+      height: 200px;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .top-banner {
+      .top-title > img {
+        max-width: 400px;
+      }
+    }
+
+    .nft-infos {
+      .wallet-nfts {
+        gap: 10px;
+        max-height: 410px;
+        margin-bottom: 20px;
+      }
+    }
+    .staked-nfts {
+      width: calc(100% - 50px);
+      .alice-carousel {
+        flex-grow: 1;
+        .staked-nft-items {
+          width: 90px;
+          .nft-card {
+            width: 90px;
+          }
+        }
+      }
+      .btn-prev,
+      .btn-next {
+        svg {
+          width: 18px;
+        }
+      }
+    }
+  }
+}

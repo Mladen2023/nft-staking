@@ -1,0 +1,112 @@
+.details__container {
+  margin: auto;;
+
+  .top-banner {
+    .top-title > img {
+      max-width: 468px;
+      width: 100%;
+    }
+
+    .wallet-info {
+      text-align: right;
+
+      .address {
+        text-align: right;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .airdrop-info {
+    .total-earned {
+      font-size: 18px;
+    }
+    .locktime-progress {
+      max-width: 470px;
+      width: 100%;
+    }
+  }
+
+  .nft-details {
+    width: 100%;
+    max-width: 1124px;
+    display: inline-flex;
+    padding: 60px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 30px;
+    border: 2px solid #6A7394;
+    background: rgba(171, 228, 247, 0.05);
+    margin: auto;
+
+    .header,
+    .nft-row {
+      justify-content: space-between;
+      .nft-img {width: 80px;}
+      .nft-id {width: 20%;}
+      .staked-day {width: 20%;}
+      .until-day {width: 20%;}
+      .actions {width: max-content;}
+    }
+
+    .body {
+      height: 420px;
+      overflow-y: auto;
+    }
+
+    .nft-row {
+      overflow: hidden;
+      padding: 20px 0px;
+      border-bottom: 1px solid rgba(71, 189, 255, 0.30);;
+      .actions {
+        justify-content: space-around;
+      }
+    }
+
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 8px;
+    }
+
+    svg {
+      width: 16px;
+    }
+
+    .disabled {
+      opacity: 0.5;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .top-banner {
+      .top-title > img {
+        max-width: 400px;
+      }
+    }
+
+    .nft-details {
+      border-radius: 5px;
+      border-color: transparent;
+      padding: 15px 10px;
+
+      .header,
+      .nft-row {
+        .nft-img {width: 32px;}
+        .nft-id {width: 25%;}
+        .staked-day {width: 25%;}
+        .until-day {width: 20%;}
+        .actions {width: max-content;}
+      }
+      img {
+        width: 26px;
+        height: 26px;
+      }
+      svg {
+        width: 10px;
+      }
+    }
+  }
+
+}

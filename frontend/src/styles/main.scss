@@ -1,0 +1,15 @@
+@import "variables";
+@import "base";
+@import "utils";
+
+// COMPONENTS
+@import "./components/common.scss";
+
+// PAGES
+@import "./pages/home.scss";
+@import "./pages/main.scss";
+@import "./pages/details.scss";
+@import "./pages/admin.scss";
+
+// LAYOUT
+@import "layout";

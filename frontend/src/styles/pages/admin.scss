@@ -1,0 +1,75 @@
+.admin__container {
+  margin: auto;;
+
+  .top-banner {
+    .top-title > img {
+      max-width: 468px;
+      width: 100%;
+    }
+
+    .wallet-info {
+      text-align: right;
+
+      .address {
+        text-align: right;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .airdrop-info {
+    .total-earned {
+      font-size: 18px;
+    }
+    .locktime-progress {
+      max-width: 470px;
+      width: 100%;
+    }
+  }
+
+  .admin-info {
+    max-width: 600px;
+
+    .aliens-btn {
+      width: 250px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+    label {
+      font-size: 24px;
+    }
+  }
+
+  .config-info {
+    background-color: #00000080;
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: 1px solid #181818;
+    .name {
+      width: 300px;
+      text-align: right;
+    }
+
+    &>div {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  input {
+    height: 50px;
+    border-radius: 25px;
+    padding: 25px;
+    background-color: #00000080;
+  }
+
+  @media screen and (max-width: 768px){
+    .top-banner {
+      .top-title > img {
+        max-width: 400px;
+      }
+    }
+  }
+}

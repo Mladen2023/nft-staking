@@ -1,0 +1,52 @@
+.home__container {
+  margin: auto;
+
+  .top-title {
+    margin-top: 50px;
+  }
+
+  .staking-info {
+    max-width: 600px;
+    justify-content: space-around;
+    margin-top: 90px;
+  }
+
+  .btn-connect {
+    margin: 90px;
+    width: max-content;
+  }
+
+  .contact-links {
+    color: rgba(245, 255, 255, 0.50);
+    font-size: 28px;
+    text-align: center;
+    > div {
+      gap: 50px;
+      > img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .top-title img {
+      max-width: 300px;
+    }
+
+    .staking-info {
+      max-width: 400px;
+      margin-top: 50px;
+    }
+
+    .contact-links {
+      font-size: 14px;
+      > div {
+        gap: 20px;
+        > img {
+          cursor: pointer;
+        }
+      }
+    }
+    
+  }
+}

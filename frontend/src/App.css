@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("./assets/fonts/KumbhSans.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/fonts/Roboto.ttf") format("truetype");
+}
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

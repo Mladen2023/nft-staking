@@ -1,0 +1,102 @@
+.Toastify {
+  font-size: 16px;
+}
+
+.aliens-font1 {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 900;
+  background: linear-gradient(180deg, #A7DFFF 0%, rgba(21, 213, 255, 0.00) 100%);
+  background-clip: text;
+  line-height: normal;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  letter-spacing: 10px;
+}
+
+.aliens-font2 {
+  font-family: 'Roboto';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 24.2px;
+  text-transform: uppercase;
+  margin-top: -15px;
+}
+
+.aliens-font3 {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background: linear-gradient(90deg, #0086FA 0%, #00EDFE 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.aliens-primary-btn {
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #0086FA 0%, #00EDFE 100%);
+
+  a {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    label {
+      color: #000;
+      text-align: center;
+      font-family: 'Kumbh Sans';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.aliens-divider {
+  height: 1px;
+  background: rgba(71, 189, 255, 0.50);
+  margin: 50px 0;
+}
+
+.text-36 {
+  font-size: 36px;
+}
+.text-18 {
+  font-size: 18px;
+}
+.text-16 {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .aliens-font1 {
+    font-size: 60px;
+    letter-spacing: 6px;
+  }
+  .aliens-font2 {
+    font-size: 13px;
+    letter-spacing: 14.3px;
+  }
+  .text-36 {
+    font-size: 24px;
+  }
+  .text-18 {
+    font-size: 10px;
+  }
+  .aliens-divider {
+    margin: 30px 0 20px;
+  }
+}

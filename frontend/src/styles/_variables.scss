@@ -1,0 +1,42 @@
+$clr-pink: #ff40bd;
+$clr-orange: #ffaa1b;
+$clr-purple: #6900ff;
+$clr-darkblue: #2a2d53;
+$clr-yellow: #fff42c;
+$clr-brown: #261d14;
+$clr-black: #000000;
+$clr-white: #ffffff;
+$clr-black-light: #373737;
+
+$clr-text: $clr-black;
+$clr-background: $clr-white;
+$clr-primary: $clr-purple;
+
+$clr-light-light: rgba(255, 255, 255, 0.5);
+$clr-dark-light: rgba(0, 0, 0, 0.5);
+
+$clr-box-shadow: rgba(0, 0, 0, 0.11);
+
+$box-shadow: 0px 4px 20px $clr-box-shadow;
+
+$colors: (
+  base: #ABE4F7,
+  backgroundDim: #000000,
+);
+
+@function getColor($color-name) {
+  @return var(--color-#{$color-name});
+}
+
+//converting scss variable into css variable
+:root {
+  @each $name, $color in $colors {
+    --color-#{$name}: #{$color};
+  }
+  --theme: "light";
+  --background-url: var(--home-bg-url);
+  --home-bg-url: url(../assets/images/bg-home.svg);
+  --home-bg-sm-url: url(../assets/images/bg-home-sm.svg);
+  --main-bg-url: url(../assets/images/bg-main.svg);
+  --main-bg-sm-url: url(../assets/images/bg-main-sm.svg);
+}

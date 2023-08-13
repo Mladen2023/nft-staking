@@ -1,0 +1,14 @@
+// DARK THEME
+.dark-theme {
+
+  .d-btn-primary:disabled,
+  .d-btn-primary.active:disabled,
+  .d-btn:disabled {
+    background-color: transparent;
+  }
+
+  .d-btn-grey {
+    background-color: getColor(base2);
+  }
+
+}

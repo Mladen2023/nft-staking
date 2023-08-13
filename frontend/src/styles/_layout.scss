@@ -1,0 +1,13 @@
+.main__content {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  font-family: 'Inter';
+  font-size: 18px;
+  line-height: normal;
+  padding: 0px 5px 20px;
+
+  background-image: var(--background-url);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
